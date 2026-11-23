@@ -1,0 +1,53 @@
+{
+  "created": "2026-08-22T08:15:07",
+  "stage": "complete",
+  "zero_epoch": 43,
+  "zero_raw": {
+    "right.abd": 104.9,
+    "right.cam": -96.0,
+    "right.thigh": -87.2,
+    "left.abd": -155.70000000000002,
+    "left.cam": 123.60000000000001,
+    "left.thigh": 135.20000000000002
+  },
+  "zero_pose_deg": {
+    "right.abd": -25.0,
+    "right.cam": 55.25,
+    "right.thigh": 16.84,
+    "left.abd": -25.0,
+    "left.cam": 55.47,
+    "left.thigh": 17.11
+  },
+  "motors": {
+    "right.abd": {
+      "offset_deg": 129.9,
+      "sign": 1,
+      "confirmed": true
+    },
+    "right.cam": {
+      "offset_deg": -151.25,
+      "sign": 1,
+      "confirmed": true
+    },
+    "right.thigh": {
+      "offset_deg": -70.36,
+      "sign": -1,
+      "confirmed": true
+    },
+    "left.abd": {
+      "offset_deg": -180.70000000000002,
+      "sign": -1,
+      "confirmed": true
+    },
+    "left.cam": {
+      "offset_deg": 179.07,
+      "sign": -1,
+      "confirmed": true
+    },
+    "left.thigh": {
+      "offset_deg": 118.09000000000002,
+      "sign": 1,
+      "confirmed": true
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+ "when": "2026-08-22 07:29:17",
+ "host": "running",
+ "python": "3.13.5",
+ "listen": {
+  "seconds": 20.0,
+  "channels": {
+   "can0": {
+    "rx": 10001,
+    "tx_local": 6000,
+    "err": 0,
+    "std": 0,
+    "ext": 16001,
+    "rtr": 0,
+    "ids": {
+     "x168": 100.0,
+     "x169": 100.0,
+     "x16a": 100.0,
+     "x2968": 200.0,
+     "x2969": 100.0,
+     "x296a": 200.0
+    },
+    "rx_per_s": 500.0,
+    "tx_local_per_s": 300.0,
+    "rx_per_tick": 5.0,
+    "iface": {
+     "txqueuelen": 100,
+     "tx_dropped_total": 17978,
+     "delta": {
+      "tx_dropped": 21,
+      "rx_dropped": 0,
+      "tx_errors": 0,
+      "rx_errors": 0,
+      "tx_packets": 6000,
+      "rx_packets": 16001
+     },
+     "tx_dropped_per_s": 1.05
+    }
+   },
+   "can1": {
+    "rx": 12002,
+    "tx_local": 6000,
+    "err": 0,
+    "std": 0,
+    "ext": 18002,
+    "rtr": 0,
+    "ids": {
+     "x168": 100.0,
+     "x169": 100.0,
+     "x16a": 100.0,
+     "x2968": 200.0,
+     "x2969": 200.0,
+     "x296a": 200.0
+    },
+    "rx_per_s": 600.1,
+    "tx_local_per_s": 300.0,
+    "rx_per_tick": 6.0,
+    "iface": {
+     "txqueuelen": 100,
+     "tx_dropped_total": 0,
+     "delta": {
+      "tx_dropped": 0,
+      "rx_dropped": 0,
+      "tx_errors": 0,
+      "rx_errors": 0,
+      "tx_packets": 6000,
+      "rx_packets": 18002
+     },
+     "tx_dropped_per_s": 0.0
+    }
+   }
+  },
+  "drives": {
+   "right.abd": {
+    "channel": "can0",
+    "id": 104,
+    "status_per_s": 200.0,
+    "cmd_per_s": 100.0,
+    "period_ms": {
+     "n": 4000,
+     "p50": 4.996,
+     "p90": 5.049,
+     "p99": 5.139,
+     "max": 5.3,
+     "min": 4.696
+    },
+    "delay_after_cmd_ms": {
+     "n": 4000,
+     "p50": 5.048,
+     "p90": 7.484,
+     "p99": 12.538,
+     "max": 20.127,
+     "min": 0.012
+    },
+    "verdict": "periodic 200 Hz"
+   },
+   "right.cam": {
+    "channel": "can0",
+    "id": 105,
+    "status_per_s": 100.0,
+    "cmd_per_s": 100.0,
+    "period_ms": {
+     "n": 1999,
+     "p50": 10.087,
+     "p90": 12.085,
+     "p99": 14.255,
+     "max": 22.092,
+     "min": 1.578
+    },
+    "delay_after_cmd_ms": {
+     "n": 2000,
+     "p50": 0.483,
+     "p90": 0.698,
+     "p99": 0.775,
+     "max": 0.833,
+     "min": 0.143
+    },
+    "verdict": "replies to commands"
+   },
+   "right.thigh": {
+    "channel": "can0",
+    "id": 106,
+    "status_per_s": 200.0,
+    "cmd_per_s": 100.0,
+    "period_ms": {
+     "n": 3999,
+     "p50": 5.005,
+     "p90": 5.061,
+     "p99": 5.148,
+     "max": 5.293,
+     "min": 4.671
+    },
+    "delay_after_cmd_ms": {
+     "n": 3999,
+     "p50": 4.846,
+     "p90": 8.472,
+     "p99": 12.731,
+     "max": 21.985,
+     "min": 0.097
+    },
+    "verdict": "periodic 200 Hz"
+   },
+   "left.abd": {
+    "channel": "can1",
+    "id": 104,
+    "status_per_s": 200.0,
+    "cmd_per_s": 100.0,
+    "period_ms": {
+     "n": 3999,
+     "p50": 5.0,
+     "p90": 5.047,
+     "p99": 5.172,
+     "max": 7.75,
+     "min": 2.227
+    },
+    "delay_after_cmd_ms": {
+     "n": 3999,
+     "p50": 5.057,
+     "p90": 8.364,
+     "p99": 13.195,
+     "max": 20.437,
+     "min": 0.025
+    },
+    "verdict": "periodic 200 Hz"
+   },
+   "left.cam": {
+    "channel": "can1",
+    "id": 105,
+    "status_per_s": 200.0,
+    "cmd_per_s": 100.0,
+    "period_ms": {
+     "n": 4000,
+     "p50": 5.0,
+     "p90": 5.033,
+     "p99": 5.164,
+     "max": 7.136,
+     "min": 2.856
+    },
+    "delay_after_cmd_ms": {
+     "n": 4000,
+     "p50": 4.972,
+     "p90": 7.781,
+     "p99": 12.753,
+     "max": 19.776,
+     "min": 0.007
+    },
+    "verdict": "periodic 200 Hz"
+   },
+   "left.thigh": {
+    "channel": "can1",
+    "id": 106,
+    "status_per_s": 200.0,
+    "cmd_per_s": 100.0,
+    "period_ms": {
+     "n": 4000,
+     "p50": 4.997,
+     "p90": 5.199,
+     "p99": 5.308,
+     "max": 5.353,
+     "min": 4.666
+    },
+    "delay_after_cmd_ms": {
+     "n": 4000,
+     "p50": 4.829,
+     "p90": 9.792,
+     "p99": 11.809,
+     "max": 18.846,
+     "min": 0.111
+    },
+    "verdict": "periodic 200 Hz"
+   }
+  },
+  "status_frames_per_tick": 11.0
+ },
+ "threads": {
+  "pid": 42972,
+  "seconds": 20.68,
+  "threads": [
+   {
+    "tid": 42972,
+    "comm": "python",
+    "cpu_pct": 0.0,
+    "vol_per_s": 3.0,
+    "invol_per_s": 0.0
+   },
+   {
+    "tid": 42973,
+    "comm": "python",
+    "cpu_pct": 2.6,
+    "vol_per_s": 69.0,
+    "invol_per_s": 22.0
+   },
+   {
+    "tid": 42974,
+    "comm": "python",
+    "cpu_pct": 17.0,
+    "vol_per_s": 334.0,
+    "invol_per_s": 380.0
+   },
+   {
+    "tid": 42975,
+    "comm": "python",
+    "cpu_pct": 13.4,
+    "vol_per_s": 674.0,
+    "invol_per_s": 72.0
+   },
+   {
+    "tid": 42976,
+    "comm": "python",
+    "cpu_pct": 1.2,
+    "vol_per_s": 176.0,
+    "invol_per_s": 20.0
+   },
+   {
+    "tid": 42977,
+    "comm": "python",
+    "cpu_pct": 7.8,
+    "vol_per_s": 124.0,
+    "invol_per_s": 42.0
+   }
+  ]
+ }
+}

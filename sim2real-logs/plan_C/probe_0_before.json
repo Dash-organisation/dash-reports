@@ -1,0 +1,539 @@
+{
+ "when": "2026-08-22 06:53:21",
+ "host": "running",
+ "python": "3.13.5",
+ "listen": {
+  "seconds": 10.0,
+  "channels": {
+   "can0": {
+    "rx": 4999,
+    "tx_local": 2994,
+    "err": 0,
+    "std": 0,
+    "ext": 7993,
+    "rtr": 0,
+    "ids": {
+     "x168": 99.8,
+     "x169": 99.8,
+     "x16a": 99.8,
+     "x2968": 200.0,
+     "x2969": 99.8,
+     "x296a": 200.1
+    },
+    "rx_per_s": 499.9,
+    "tx_local_per_s": 299.4,
+    "rx_per_tick": 5.0,
+    "iface": {
+     "txqueuelen": 10,
+     "tx_dropped_total": 12951,
+     "delta": {
+      "tx_dropped": 22,
+      "rx_dropped": 0,
+      "tx_errors": 0,
+      "rx_errors": 0,
+      "tx_packets": 2997,
+      "rx_packets": 7998
+     },
+     "tx_dropped_per_s": 2.2
+    }
+   },
+   "can1": {
+    "rx": 6001,
+    "tx_local": 2994,
+    "err": 0,
+    "std": 0,
+    "ext": 8995,
+    "rtr": 0,
+    "ids": {
+     "x168": 99.8,
+     "x169": 99.8,
+     "x16a": 99.8,
+     "x2968": 200.0,
+     "x2969": 200.0,
+     "x296a": 200.1
+    },
+    "rx_per_s": 600.1,
+    "tx_local_per_s": 299.4,
+    "rx_per_tick": 6.0,
+    "iface": {
+     "txqueuelen": 10,
+     "tx_dropped_total": 0,
+     "delta": {
+      "tx_dropped": 0,
+      "rx_dropped": 0,
+      "tx_errors": 0,
+      "rx_errors": 0,
+      "tx_packets": 2997,
+      "rx_packets": 8999
+     },
+     "tx_dropped_per_s": 0.0
+    }
+   }
+  },
+  "drives": {
+   "right.abd": {
+    "channel": "can0",
+    "id": 104,
+    "status_per_s": 200.0,
+    "cmd_per_s": 99.8,
+    "period_ms": {
+     "n": 1999,
+     "p50": 5.007,
+     "p90": 5.073,
+     "p99": 5.182,
+     "max": 5.291,
+     "min": 4.681
+    },
+    "delay_after_cmd_ms": {
+     "n": 1999,
+     "p50": 5.05,
+     "p90": 10.537,
+     "p99": 13.327,
+     "max": 18.962,
+     "min": 0.015
+    },
+    "verdict": "periodic 200 Hz"
+   },
+   "right.cam": {
+    "channel": "can0",
+    "id": 105,
+    "status_per_s": 99.8,
+    "cmd_per_s": 99.8,
+    "period_ms": {
+     "n": 997,
+     "p50": 10.099,
+     "p90": 12.123,
+     "p99": 16.088,
+     "max": 18.651,
+     "min": 2.101
+    },
+    "delay_after_cmd_ms": {
+     "n": 998,
+     "p50": 0.469,
+     "p90": 0.655,
+     "p99": 0.739,
+     "max": 0.949,
+     "min": 0.123
+    },
+    "verdict": "replies to commands"
+   },
+   "right.thigh": {
+    "channel": "can0",
+    "id": 106,
+    "status_per_s": 200.1,
+    "cmd_per_s": 99.8,
+    "period_ms": {
+     "n": 2000,
+     "p50": 5.0,
+     "p90": 5.037,
+     "p99": 5.097,
+     "max": 5.242,
+     "min": 4.75
+    },
+    "delay_after_cmd_ms": {
+     "n": 2000,
+     "p50": 5.005,
+     "p90": 9.173,
+     "p99": 12.903,
+     "max": 16.847,
+     "min": 0.112
+    },
+    "verdict": "periodic 200 Hz"
+   },
+   "left.abd": {
+    "channel": "can1",
+    "id": 104,
+    "status_per_s": 200.0,
+    "cmd_per_s": 99.8,
+    "period_ms": {
+     "n": 1999,
+     "p50": 4.999,
+     "p90": 5.052,
+     "p99": 5.105,
+     "max": 6.301,
+     "min": 3.718
+    },
+    "delay_after_cmd_ms": {
+     "n": 1999,
+     "p50": 5.05,
+     "p90": 10.166,
+     "p99": 13.48,
+     "max": 18.023,
+     "min": 0.1
+    },
+    "verdict": "periodic 200 Hz"
+   },
+   "left.cam": {
+    "channel": "can1",
+    "id": 105,
+    "status_per_s": 200.0,
+    "cmd_per_s": 99.8,
+    "period_ms": {
+     "n": 1999,
+     "p50": 5.0,
+     "p90": 5.02,
+     "p99": 5.093,
+     "max": 6.344,
+     "min": 3.688
+    },
+    "delay_after_cmd_ms": {
+     "n": 1999,
+     "p50": 5.077,
+     "p90": 10.344,
+     "p99": 13.908,
+     "max": 18.296,
+     "min": 0.005
+    },
+    "verdict": "periodic 200 Hz"
+   },
+   "left.thigh": {
+    "channel": "can1",
+    "id": 106,
+    "status_per_s": 200.1,
+    "cmd_per_s": 99.8,
+    "period_ms": {
+     "n": 2000,
+     "p50": 5.0,
+     "p90": 5.046,
+     "p99": 5.097,
+     "max": 5.198,
+     "min": 4.787
+    },
+    "delay_after_cmd_ms": {
+     "n": 2000,
+     "p50": 5.032,
+     "p90": 8.413,
+     "p99": 13.111,
+     "max": 17.106,
+     "min": 0.116
+    },
+    "verdict": "periodic 200 Hz"
+   }
+  },
+  "status_frames_per_tick": 11.0
+ },
+ "threads": {
+  "pid": 22515,
+  "seconds": 10.37,
+  "threads": [
+   {
+    "tid": 22515,
+    "comm": "python",
+    "cpu_pct": 0.1,
+    "vol_per_s": 3.0,
+    "invol_per_s": 0.0
+   },
+   {
+    "tid": 22566,
+    "comm": "python",
+    "cpu_pct": 2.6,
+    "vol_per_s": 98.0,
+    "invol_per_s": 22.0
+   },
+   {
+    "tid": 22574,
+    "comm": "python",
+    "cpu_pct": 33.2,
+    "vol_per_s": 590.0,
+    "invol_per_s": 463.0
+   },
+   {
+    "tid": 22577,
+    "comm": "python",
+    "cpu_pct": 13.2,
+    "vol_per_s": 769.0,
+    "invol_per_s": 86.0
+   },
+   {
+    "tid": 22585,
+    "comm": "python",
+    "cpu_pct": 1.3,
+    "vol_per_s": 184.0,
+    "invol_per_s": 16.0
+   },
+   {
+    "tid": 40524,
+    "comm": "python",
+    "cpu_pct": 7.6,
+    "vol_per_s": 152.0,
+    "invol_per_s": 50.0
+   }
+  ]
+ },
+ "bench": {
+  "can0": {
+   "python-can": {
+    "frame_us": {
+     "n": 4001,
+     "p50": 90.0,
+     "p90": 182.1,
+     "p99": 297.0,
+     "max": 548.4,
+     "min": 81.3
+    },
+    "empty_us": {
+     "n": 500,
+     "p50": 17.0,
+     "p90": 19.8,
+     "p99": 27.6,
+     "max": 277.1,
+     "min": 16.1
+    },
+    "drain_ms": {
+     "n": 500,
+     "p50": 0.839,
+     "p90": 1.12,
+     "p99": 1.985,
+     "max": 2.392,
+     "min": 0.36
+    },
+    "frames_per_drain": 8.0
+   },
+   "raw/exception": {
+    "frame_us": {
+     "n": 3997,
+     "p50": 9.6,
+     "p90": 36.6,
+     "p99": 48.8,
+     "max": 96.4,
+     "min": 7.4
+    },
+    "empty_us": {
+     "n": 500,
+     "p50": 57.9,
+     "p90": 68.0,
+     "p99": 78.0,
+     "max": 164.3,
+     "min": 43.9
+    },
+    "drain_ms": {
+     "n": 500,
+     "p50": 0.166,
+     "p90": 0.197,
+     "p99": 0.262,
+     "max": 0.497,
+     "min": 0.104
+    },
+    "frames_per_drain": 7.99
+   },
+   "raw/poll": {
+    "frame_us": {
+     "n": 3996,
+     "p50": 14.1,
+     "p90": 47.0,
+     "p99": 67.6,
+     "max": 349.7,
+     "min": 12.1
+    },
+    "empty_us": {
+     "n": 500,
+     "p50": 4.8,
+     "p90": 5.0,
+     "p99": 10.1,
+     "max": 55.5,
+     "min": 4.5
+    },
+    "drain_ms": {
+     "n": 500,
+     "p50": 0.159,
+     "p90": 0.176,
+     "p99": 0.308,
+     "max": 0.478,
+     "min": 0.1
+    },
+    "frames_per_drain": 7.99
+   },
+   "raw/select": {
+    "frame_us": {
+     "n": 3991,
+     "p50": 20.5,
+     "p90": 121.2,
+     "p99": 259.6,
+     "max": 952.4,
+     "min": 16.5
+    },
+    "empty_us": {
+     "n": 500,
+     "p50": 9.2,
+     "p90": 13.3,
+     "p99": 169.8,
+     "max": 273.0,
+     "min": 8.6
+    },
+    "drain_ms": {
+     "n": 500,
+     "p50": 0.37,
+     "p90": 0.61,
+     "p99": 1.087,
+     "max": 1.446,
+     "min": 0.1
+    },
+    "frames_per_drain": 7.98
+   },
+   "canio.RawCanBus": {
+    "frame_us": {
+     "n": 3996,
+     "p50": 16.9,
+     "p90": 57.1,
+     "p99": 101.5,
+     "max": 319.2,
+     "min": 14.0
+    },
+    "empty_us": {
+     "n": 500,
+     "p50": 63.5,
+     "p90": 76.6,
+     "p99": 110.9,
+     "max": 152.2,
+     "min": 48.2
+    },
+    "drain_ms": {
+     "n": 500,
+     "p50": 0.249,
+     "p90": 0.317,
+     "p99": 0.519,
+     "max": 0.653,
+     "min": 0.158
+    },
+    "frames_per_drain": 7.99
+   }
+  },
+  "can1": {
+   "python-can": {
+    "frame_us": {
+     "n": 4491,
+     "p50": 93.1,
+     "p90": 241.5,
+     "p99": 471.6,
+     "max": 618.6,
+     "min": 81.7
+    },
+    "empty_us": {
+     "n": 500,
+     "p50": 17.6,
+     "p90": 22.1,
+     "p99": 136.4,
+     "max": 223.1,
+     "min": 16.5
+    },
+    "drain_ms": {
+     "n": 500,
+     "p50": 1.211,
+     "p90": 1.783,
+     "p99": 1.941,
+     "max": 2.383,
+     "min": 0.55
+    },
+    "frames_per_drain": 8.98
+   },
+   "raw/exception": {
+    "frame_us": {
+     "n": 4500,
+     "p50": 9.5,
+     "p90": 37.1,
+     "p99": 44.0,
+     "max": 125.8,
+     "min": 7.6
+    },
+    "empty_us": {
+     "n": 500,
+     "p50": 54.9,
+     "p90": 57.2,
+     "p99": 69.4,
+     "max": 149.3,
+     "min": 38.2
+    },
+    "drain_ms": {
+     "n": 500,
+     "p50": 0.173,
+     "p90": 0.18,
+     "p99": 0.257,
+     "max": 0.28,
+     "min": 0.122
+    },
+    "frames_per_drain": 9.0
+   },
+   "raw/poll": {
+    "frame_us": {
+     "n": 4500,
+     "p50": 14.6,
+     "p90": 45.7,
+     "p99": 69.0,
+     "max": 87.6,
+     "min": 12.7
+    },
+    "empty_us": {
+     "n": 500,
+     "p50": 5.2,
+     "p90": 9.4,
+     "p99": 10.6,
+     "max": 14.5,
+     "min": 4.8
+    },
+    "drain_ms": {
+     "n": 500,
+     "p50": 0.176,
+     "p90": 0.201,
+     "p99": 0.246,
+     "max": 0.268,
+     "min": 0.164
+    },
+    "frames_per_drain": 9.0
+   },
+   "raw/select": {
+    "frame_us": {
+     "n": 4501,
+     "p50": 20.0,
+     "p90": 116.1,
+     "p99": 205.4,
+     "max": 337.0,
+     "min": 16.8
+    },
+    "empty_us": {
+     "n": 500,
+     "p50": 9.4,
+     "p90": 12.2,
+     "p99": 17.1,
+     "max": 21.3,
+     "min": 9.0
+    },
+    "drain_ms": {
+     "n": 500,
+     "p50": 0.368,
+     "p90": 0.442,
+     "p99": 0.494,
+     "max": 0.595,
+     "min": 0.237
+    },
+    "frames_per_drain": 9.0
+   },
+   "canio.RawCanBus": {
+    "frame_us": {
+     "n": 4497,
+     "p50": 19.2,
+     "p90": 55.9,
+     "p99": 91.6,
+     "max": 257.9,
+     "min": 13.5
+    },
+    "empty_us": {
+     "n": 500,
+     "p50": 63.4,
+     "p90": 72.4,
+     "p99": 109.8,
+     "max": 252.8,
+     "min": 43.0
+    },
+    "drain_ms": {
+     "n": 500,
+     "p50": 0.261,
+     "p90": 0.344,
+     "p99": 0.523,
+     "max": 0.615,
+     "min": 0.184
+    },
+    "frames_per_drain": 8.99
+   }
+  }
+ }
+}
