@@ -1,39 +1,39 @@
 # dash-reports
 
-Rapports, galeries, vidéos et données lourdes du projet DASH-01. Le code est dans [`dash-sim2real`](https://github.com/Dash-organisation/dash-sim2real).
+Reports, galleries, videos and heavy data of the DASH-01 project. The code is in [`dash-sim2real`](https://github.com/Dash-organisation/dash-sim2real).
 
-Les chemins `report/`, `docs/experiments/` et `RLframework/results/` sont **les mêmes que dans l'ancien repo** (DASH-01@3574ddd). Les galeries HTML pointent vers ces trois dossiers, et `python report/scripts/build_report.py --frozen` vérifie les empreintes des fichiers. Il ne faut donc pas les déplacer.
+The `report/`, `docs/experiments/` and `RLframework/results/` paths are **the same as in the old repo** (DASH-01@3574ddd). The HTML galleries point into these three folders, and `python report/scripts/build_report.py --frozen` checks the file hashes, so do not move them.
 
-## Galeries par série
+## Galleries by series
 
-Ouvrir les `.html` depuis un clone local, dans le navigateur. Les fiches renvoient à `dash-sim2real/docs/rl/EXPERIMENTS.md`.
+Open the `.html` files from a local clone, in the browser. The entries link to `dash-sim2real/docs/rl/EXPERIMENTS.md`.
 
-| Série | Galerie | Fiche |
+| Series | Gallery | Entry |
 | --- | --- | --- |
-| STOP-01 à 06 | [`report/index.html`](report/index.html) | [STOP-01 à 06](https://github.com/Dash-organisation/dash-sim2real/blob/main/docs/rl/EXPERIMENTS.md#stop-01-à-06) |
-| Transfert de la policy de Nathann vers CAD-v2 | [`report/policy-transfer01-videos.html`](report/policy-transfer01-videos.html) | — |
-| GAIT-04 à 11 | [04](report/gait04-videos.html), [06](report/gait06-videos.html), [07](report/gait07-videos.html), [08](report/gait08-videos.html), [09](report/gait09-videos.html), [11](report/gait11-videos.html), [flat-feet](report/flatfeet-videos.html) | [GAIT-01 à 11](https://github.com/Dash-organisation/dash-sim2real/blob/main/docs/rl/EXPERIMENTS.md#gait-01-à-11) |
-| WALK-01 | [vidéos](report/walk01-videos.html), [aperçus CPU](report/walk01-cpu-previews.html), [diagnostics](report/walk01-diagnostics.html) | [SPEED-01, WALK-01](https://github.com/Dash-organisation/dash-sim2real/blob/main/docs/rl/EXPERIMENTS.md#speed-01-walk-01) |
+| STOP-01 to 06 | [`report/index.html`](report/index.html) | [STOP-01 to 06](https://github.com/Dash-organisation/dash-sim2real/blob/main/docs/rl/EXPERIMENTS.md#stop-01-to-06) |
+| Transfer of Nathann's policy to CAD-v2 | [`report/policy-transfer01-videos.html`](report/policy-transfer01-videos.html) | — |
+| GAIT-04 to 11 | [04](report/gait04-videos.html), [06](report/gait06-videos.html), [07](report/gait07-videos.html), [08](report/gait08-videos.html), [09](report/gait09-videos.html), [11](report/gait11-videos.html), [flat-feet](report/flatfeet-videos.html) | [GAIT-01 to 11](https://github.com/Dash-organisation/dash-sim2real/blob/main/docs/rl/EXPERIMENTS.md#gait-01-to-11) |
+| WALK-01 | [videos](report/walk01-videos.html), [CPU previews](report/walk01-cpu-previews.html), [diagnostics](report/walk01-diagnostics.html) | [SPEED-01, WALK-01](https://github.com/Dash-organisation/dash-sim2real/blob/main/docs/rl/EXPERIMENTS.md#speed-01-walk-01) |
 | CLEARANCE-01/02 | [01](report/clearance01-videos.html), [02](report/clearance02-videos.html) | [CLEARANCE-01/02](https://github.com/Dash-organisation/dash-sim2real/blob/main/docs/rl/EXPERIMENTS.md#clearance-0102) |
 | STAND-03 | [`report/standing03-videos.html`](report/standing03-videos.html) | [STAND-03](https://github.com/Dash-organisation/dash-sim2real/blob/main/docs/rl/EXPERIMENTS.md#stand-03) |
-| STAND-04 (policy déployée) | [`report/standing04-videos.html`](report/standing04-videos.html) | [STAND-04](https://github.com/Dash-organisation/dash-sim2real/blob/main/docs/rl/EXPERIMENTS.md#stand-04) |
+| STAND-04 (deployed policy) | [`report/standing04-videos.html`](report/standing04-videos.html) | [STAND-04](https://github.com/Dash-organisation/dash-sim2real/blob/main/docs/rl/EXPERIMENTS.md#stand-04) |
 
-Les textes de Léo-Paul sont dans `report/*.md`. [`report/README.md`](report/README.md) en est le point d'entrée.
+Léo-Paul's write-ups are in `report/*.md`; [`report/README.md`](report/README.md) is the entry point.
 
-## Autres dossiers
+## Other folders
 
-| Dossier | Contenu |
+| Folder | Contents |
 | --- | --- |
-| `docs/experiments/` | records d'expériences complets, y compris les fichiers de plus de 1 Mo (`progress.csv`…). Les fichiers de moins de 1 Mo sont aussi dans `dash-sim2real` |
-| `RLframework/results/` | résultats que lisent les galeries |
-| `sim2real-logs/` | données brutes de la black-box des runs 3 à 9 (17–20/11/2026) et bancs du plan C : `.bbseg`, `.bbdump`, CSV, JSON, NPZ. Les analyses `ANALYSE.md` sont aussi dans `dash-sim2real/docs/sim2real/Logs/` |
+| `docs/experiments/` | complete experiment records, including files over 1 MB (`progress.csv`…). Files under 1 MB are also in `dash-sim2real` |
+| `RLframework/results/` | results read by the galleries |
+| `sim2real-logs/` | raw black-box data of runs 3 to 9 (2026-11-17 to 11-20) and the plan C benches: `.bbseg`, `.bbdump`, CSV, JSON, NPZ. The `ANALYSE.md` analyses (in French) are also in `dash-sim2real/docs/sim2real/Logs/`, with English summaries in `dash-sim2real/docs/sim2real/README.md` |
 
-Le repo est un repo git simple, **sans LFS**. Aucun fichier ne dépasse 25 Mo. On passera à LFS si le repo dépasse 2 à 3 Go.
+This is a plain git repo, **without LFS**. No file is larger than 25 MB. We will move to LFS if the repo grows past 2 to 3 GB.
 
-## Ce qui n'est pas publié
+## What is not published
 
-Les thèses, les présentations de midterm et le dossier `report/presentations/midterm-2026-10-29/` de Léo-Paul ne sont pas dans ce repo. Les scripts `report/scripts/*midterm*` et `update_final_challenges.py` lisent ce dossier, donc ils ne fonctionnent pas sans lui.
+The theses, the midterm presentations and Léo-Paul's `report/presentations/midterm-2026-10-29/` folder are not in this repo. The `report/scripts/*midterm*` scripts and `update_final_challenges.py` read that folder, so they do not work without it.
 
-## Licence
+## License
 
-[Mozilla Public License 2.0](LICENSE), la même que l'ancien repo DASH-01.
+[Mozilla Public License 2.0](LICENSE), the same as the old DASH-01 repo.
