@@ -2,6 +2,8 @@
 
 Reports, galleries, videos and heavy data of the DASH-01 project. The code is in [`dash-sim2real`](https://github.com/Dash-organisation/dash-sim2real).
 
+**This repo is a full mirror, read-only for day-to-day work.** Léo-Paul's report workspace lives in `dash-sim2real/report/`, where only files under 1 MiB are committed. This repo also holds the heavy files (videos, progress logs, archives, traces). It is updated from a `dash-sim2real` clone with `tools/sync_reports.sh --push`, which copies `report/`, `docs/experiments/` and `RLframework/results/` here at the same paths and never deletes anything.
+
 The `report/`, `docs/experiments/` and `RLframework/results/` paths are **the same as in the old repo** (DASH-01@3574ddd). The HTML galleries point into these three folders, and `python report/scripts/build_report.py --frozen` checks the file hashes, so do not move them.
 
 ## Galleries by series
