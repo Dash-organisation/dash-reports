@@ -1,0 +1,21 @@
+# Binaries, byte-for-byte on every checkout.
+*.zip binary
+*.pkl binary
+*.npz binary
+*.npy binary
+*.msgpack binary
+*.stl binary
+*.mp4 binary
+*.png binary
+*.pdf binary
+*.pptx binary
+*.sh text eol=lf
+
+# The report manifest hashes file bytes, including line endings (build_report.py --frozen).
+# Same rules as in DASH-01@3574ddd.
+/report/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/report/figures/** linguist-generated=true
+/report/data/code/** linguist-generated=true
+/report/figures/*.svg whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+/report/presentations/**/assets/*.svg whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol linguist-generated=true
+/docs/experiments/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
