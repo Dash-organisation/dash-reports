@@ -17,6 +17,8 @@ Open the `.html` files from a local clone, in the browser. The entries link to `
 | CLEARANCE-01/02 | [01](report/clearance01-videos.html), [02](report/clearance02-videos.html) | [CLEARANCE-01/02](https://github.com/Dash-organisation/dash-sim2real/blob/main/docs/rl/EXPERIMENTS.md#clearance-0102) |
 | STAND-03 | [`report/standing03-videos.html`](report/standing03-videos.html) | [STAND-03](https://github.com/Dash-organisation/dash-sim2real/blob/main/docs/rl/EXPERIMENTS.md#stand-03) |
 | STAND-04 (deployed policy) | [`report/standing04-videos.html`](report/standing04-videos.html) | [STAND-04](https://github.com/Dash-organisation/dash-sim2real/blob/main/docs/rl/EXPERIMENTS.md#stand-04) |
+| QUIET-01v2 | [`report/quiet01v2-videos.html`](report/quiet01v2-videos.html) | [QUIET-01 v1, v2](https://github.com/Dash-organisation/dash-sim2real/blob/main/docs/rl/EXPERIMENTS.md#quiet-01-v1-v2) |
+| QUIET-PUSH-01 | [`report/quiet-push01-videos.html`](report/quiet-push01-videos.html) | [QUIET-PUSH-01](https://github.com/Dash-organisation/dash-sim2real/blob/main/docs/rl/EXPERIMENTS.md#quiet-push-01) |
 
 Léo-Paul's write-ups are in `report/*.md`; [`report/README.md`](report/README.md) is the entry point.
 
