@@ -29,3 +29,11 @@ Les textes de Léo-Paul sont dans `report/*.md`. [`report/README.md`](report/REA
 | `sim2real-logs/` | données brutes de la black-box des runs 3 à 9 (17–20/11/2026) et bancs du plan C : `.bbseg`, `.bbdump`, CSV, JSON, NPZ. Les analyses `ANALYSE.md` sont aussi dans `dash-sim2real/docs/sim2real/Logs/` |
 
 Le repo est un repo git simple, **sans LFS**. Aucun fichier ne dépasse 25 Mo. On passera à LFS si le repo dépasse 2 à 3 Go.
+
+## Ce qui n'est pas publié
+
+Les thèses, les présentations de midterm et le dossier `report/presentations/midterm-2026-10-29/` de Léo-Paul ne sont pas dans ce repo. Les scripts `report/scripts/*midterm*` et `update_final_challenges.py` lisent ce dossier, donc ils ne fonctionnent pas sans lui.
+
+## Licence
+
+[Mozilla Public License 2.0](LICENSE), la même que l'ancien repo DASH-01.
