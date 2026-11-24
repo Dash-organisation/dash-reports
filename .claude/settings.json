@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git branch:*)",
+      "Bash(git switch:*)",
+      "Bash(git pull:*)",
+      "Bash(git fetch:*)",
+      "Bash(python report/scripts/build_report.py --frozen:*)"
+    ],
+    "ask": [
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git rm:*)",
+      "Bash(git mv:*)"
+    ],
+    "deny": [
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Read(**/*.mp4)",
+      "Read(**/*.npz)",
+      "Read(**/*.pkl)",
+      "Read(**/*.msgpack)",
+      "Read(**/*.bbseg)",
+      "Read(**/*.bbdump)",
+      "Read(./report/manifest.json)"
+    ]
+  }
+}
